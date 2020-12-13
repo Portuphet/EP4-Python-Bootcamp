@@ -1,15 +1,18 @@
-from distutils.core import setup
+import io
+from os.path import abspath, dirname, join
+from setuptools import find_packages, setup
 
-try:
-  with open("README.md","r") as fh:
-    long_description = fh.read()
-except:
-  long_description = 'package practice to learn python OOP by PtP'
+
+HERE = dirname(abspath(__file__))
+LOAD_TEXT = lambda name: io.open(join(HERE, name), encoding='UTF-8').read()
+DESCRIPTION = '\n\n'.join(LOAD_TEXT(_) for _ in [
+    'README.rst'
+])
 
 setup(
   name = 'PtPclass',         # How you named your package folder (MyLib)
   packages = ['PtPclass'],   # Chose the same as "name"
-  version = '0.0.1',      # Start with a small number and increase it with every change you make
+  version = '0.0.6',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'package practice to learn python OOP by PtP',   # Give a short description about your library
   long_description=long_description,
