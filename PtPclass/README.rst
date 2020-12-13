@@ -6,16 +6,17 @@
 
 เปิด CMD / Terminal
 
-```python
-pip install PtPclass
-```
+.. code:: python
+
+	pip install PtPclass
+
 
 วิธีเล่น
 ~~~~~~~~~~~~~~
 เปิด IDLE ขึ้นมาแล้วพิมพ์...
 
-```python
->>> from PtPclass import Student, StudentSpecial
+.. code:: python
+	from PtPclass import Student, StudentSpecial
 
 	print('=======1 Jan=======')	
 	student0 = SpecialStudent('Will', 'Gates')
@@ -47,7 +48,7 @@ pip install PtPclass
 
 	student1.ShowEXP()
 	student2.ShowEXP()
-```
+
 
 
 
