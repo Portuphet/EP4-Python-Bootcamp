@@ -16,6 +16,7 @@
 เปิด IDLE ขึ้นมาแล้วพิมพ์...
 
 .. code:: python
+
 	from PtPclass import Student, StudentSpecial
 
 	print('=======1 Jan=======')	
