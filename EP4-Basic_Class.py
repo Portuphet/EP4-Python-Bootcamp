@@ -24,6 +24,12 @@ class Student:
 		self.exp += score
 		self.lesson += 1
 
+class SpecialScore():
+	"""docstring for SpecialScore"""
+	def __init__(self):
+		self.score = 500
+		
+
 class SpecialStudent(Student):
 	"""docstring for SpecialStudent"""
 	def __init__(self, name, father):
@@ -39,6 +45,7 @@ class SpecialStudent(Student):
 
 	def AskEXP(self,score=10):
 		self.AddEXP(score)
+
 
 
 print('=======1 Jan=======')	
